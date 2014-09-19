@@ -27,7 +27,9 @@ mkdir -p $SSH_DIR/
 chmod 700 $SSH_DIR/
 
 cp $ENV_DIR/SSH_KEY $SSH_DIR/id_rsa
+cp $ENV_DIR/SSH_KEY_PUBLIC $SSH_DIR/id_rsa.pub
 chmod 400 $SSH_DIR/id_rsa
+chmod 400 $SSH_DIR/id_rsa.pub
 
 echo 'StrictHostKeyChecking=no' > $SSH_DIR/config
 chmod 600 $SSH_DIR/config
