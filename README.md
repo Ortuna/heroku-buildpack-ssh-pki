@@ -10,6 +10,7 @@ Usage
 Set `SSH_KEY` variable to private key:
 
     heroku config:set SSH_KEY="`cat /path/to/id_rsa`"
+    heroku config:set SSH_KEY_PUBLIC="`cat /path/to/id_rsa.pub`"
 
 The key must not require a password to use.  Before your application is run the `SSH_KEY` environment variable is unset so that it is not so easily accessible.
 
